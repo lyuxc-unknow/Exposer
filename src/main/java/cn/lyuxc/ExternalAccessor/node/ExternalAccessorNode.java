@@ -1,6 +1,7 @@
-package cn.lyuxc.exprorser.block;
+package cn.lyuxc.ExternalAccessor.node;
 
-import cn.lyuxc.exprorser.cap.ItemHandlerExposer;
+import cn.lyuxc.ExternalAccessor.ExternalAccessor;
+import cn.lyuxc.ExternalAccessor.capability.ExternalAccessorItemHandler;
 import com.refinedmods.refinedstorage.api.network.INetwork;
 import com.refinedmods.refinedstorage.apiimpl.network.node.NetworkNode;
 import net.minecraft.core.BlockPos;
@@ -8,9 +9,9 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.neoforged.neoforge.items.IItemHandler;
 
-public class NetworkNodeExposer extends NetworkNode{
-    private ItemHandlerExposer itemHandler;
-    protected NetworkNodeExposer(Level level, BlockPos pos) {
+public class ExternalAccessorNode extends NetworkNode {
+    private ExternalAccessorItemHandler itemHandler;
+    public ExternalAccessorNode(Level level, BlockPos pos) {
         super(level, pos);
     }
 
@@ -21,13 +22,13 @@ public class NetworkNodeExposer extends NetworkNode{
 
     @Override
     public ResourceLocation getId() {
-        return new ResourceLocation("exposer");
+        return ExternalAccessor.rl("external_accessor");
     }
 
     @Override
     public void onConnected(INetwork network) {
         super.onConnected(network);
-        itemHandler = new ItemHandlerExposer(network);
+        itemHandler = new ExternalAccessorItemHandler(network);
         network.getItemStorageCache().addListener(itemHandler);
     }
 

@@ -1,4 +1,4 @@
-package cn.lyuxc.exprorser.cap;
+package cn.lyuxc.ExternalAccessor.capability;
 
 import com.refinedmods.refinedstorage.api.network.INetwork;
 import com.refinedmods.refinedstorage.api.storage.cache.IStorageCacheListener;
@@ -12,18 +12,16 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
 
-public class ItemHandlerExposer implements IItemHandler, IStorageCacheListener<ItemStack> {
+public class ExternalAccessorItemHandler implements IItemHandler, IStorageCacheListener<ItemStack> {
     private final INetwork network;
     private List<ItemStack> storageCacheData;
 
-    public ItemHandlerExposer(INetwork network) {
+    public ExternalAccessorItemHandler(INetwork network) {
         this.network = network;
         invalidate();
     }
     @Override
-    public void onAttached() {
-//        invalidate();
-    }
+    public void onAttached() { }
 
     @Override
     public void onInvalidated() {
@@ -50,7 +48,6 @@ public class ItemHandlerExposer implements IItemHandler, IStorageCacheListener<I
         if (slot < storageCacheData.size()) {
             return storageCacheData.get(slot);
         }
-
         return ItemStack.EMPTY;
     }
 

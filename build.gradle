@@ -79,6 +79,13 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
 }
 
 dependencies {
@@ -90,6 +97,7 @@ dependencies {
     // For all intends and purposes: You can treat this dependency as if it is a normal library you would use.
     implementation "net.neoforged:neoforge:${neo_version}"
     implementation "curse.maven:refined-storage-243076:5165548"
+    implementation jarJar("software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:4.4.4")
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
@@ -120,7 +128,12 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/repo"
+            url "http://localhost:8080/repository/maven-releases/"
+            allowInsecureProtocol = true
+            credentials {
+                username = 'admin'
+                password = '@lyuxc@'
+            }
         }
     }
 }
