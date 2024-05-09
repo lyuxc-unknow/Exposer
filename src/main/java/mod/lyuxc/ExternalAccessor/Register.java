@@ -1,8 +1,8 @@
-package cn.lyuxc.ExternalAccessor;
+package mod.lyuxc.ExternalAccessor;
 
-import cn.lyuxc.ExternalAccessor.block.ExternalAccessorBlock;
-import cn.lyuxc.ExternalAccessor.block.ExternalAccessorBlockItem;
-import cn.lyuxc.ExternalAccessor.block.render.tile.ExternalAccessorBlockEntity;
+import mod.lyuxc.ExternalAccessor.block.ExternalAccessorBlock;
+import mod.lyuxc.ExternalAccessor.block.ExternalAccessorBlockItem;
+import mod.lyuxc.ExternalAccessor.blockentity.ExternalAccessorBlockEntity;
 import com.mojang.datafixers.DSL;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

@@ -1,7 +1,7 @@
-package cn.lyuxc.ExternalAccessor.block.render;
+package mod.lyuxc.ExternalAccessor.block.render;
 
-import cn.lyuxc.ExternalAccessor.block.models.ExternalAccessorBlockModel;
-import cn.lyuxc.ExternalAccessor.block.render.tile.ExternalAccessorBlockEntity;
+import mod.lyuxc.ExternalAccessor.block.models.ExternalAccessorBlockModel;
+import mod.lyuxc.ExternalAccessor.blockentity.ExternalAccessorBlockEntity;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import software.bernie.geckolib.renderer.GeoBlockRenderer;
 

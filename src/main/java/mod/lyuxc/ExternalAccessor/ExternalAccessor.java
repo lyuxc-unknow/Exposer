@@ -1,6 +1,6 @@
-package cn.lyuxc.ExternalAccessor;
+package mod.lyuxc.ExternalAccessor;
 
-import cn.lyuxc.ExternalAccessor.block.render.ExternalAccessorBlockRenderer;
+import mod.lyuxc.ExternalAccessor.block.render.ExternalAccessorBlockRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;

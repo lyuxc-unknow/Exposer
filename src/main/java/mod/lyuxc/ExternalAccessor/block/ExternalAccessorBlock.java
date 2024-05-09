@@ -1,6 +1,6 @@
-package cn.lyuxc.ExternalAccessor.block;
+package mod.lyuxc.ExternalAccessor.block;
 
-import cn.lyuxc.ExternalAccessor.block.render.tile.ExternalAccessorBlockEntity;
+import mod.lyuxc.ExternalAccessor.blockentity.ExternalAccessorBlockEntity;
 import com.refinedmods.refinedstorage.RSBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;

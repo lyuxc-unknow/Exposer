@@ -1,7 +1,7 @@
-package cn.lyuxc.ExternalAccessor.block.models;
+package mod.lyuxc.ExternalAccessor.block.models;
 
-import cn.lyuxc.ExternalAccessor.ExternalAccessor;
-import cn.lyuxc.ExternalAccessor.block.render.tile.ExternalAccessorBlockEntity;
+import mod.lyuxc.ExternalAccessor.ExternalAccessor;
+import mod.lyuxc.ExternalAccessor.blockentity.ExternalAccessorBlockEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

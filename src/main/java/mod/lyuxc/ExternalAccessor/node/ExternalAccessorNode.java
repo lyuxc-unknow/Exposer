@@ -1,7 +1,7 @@
-package cn.lyuxc.ExternalAccessor.node;
+package mod.lyuxc.ExternalAccessor.node;
 
-import cn.lyuxc.ExternalAccessor.ExternalAccessor;
-import cn.lyuxc.ExternalAccessor.capability.ExternalAccessorItemHandler;
+import mod.lyuxc.ExternalAccessor.ExternalAccessor;
+import mod.lyuxc.ExternalAccessor.capability.ExternalAccessorItemHandler;
 import com.refinedmods.refinedstorage.api.network.INetwork;
 import com.refinedmods.refinedstorage.apiimpl.network.node.NetworkNode;
 import net.minecraft.core.BlockPos;

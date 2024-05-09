@@ -1,7 +1,7 @@
-package cn.lyuxc.ExternalAccessor.block.render.tile;
+package mod.lyuxc.ExternalAccessor.blockentity;
 
-import cn.lyuxc.ExternalAccessor.Register;
-import cn.lyuxc.ExternalAccessor.node.ExternalAccessorNode;
+import mod.lyuxc.ExternalAccessor.Register;
+import mod.lyuxc.ExternalAccessor.node.ExternalAccessorNode;
 import com.refinedmods.refinedstorage.blockentity.NetworkNodeBlockEntity;
 import com.refinedmods.refinedstorage.blockentity.data.BlockEntitySynchronizationSpec;
 import net.minecraft.core.BlockPos;

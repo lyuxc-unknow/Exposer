@@ -1,4 +1,4 @@
-package cn.lyuxc.ExternalAccessor.capability;
+package mod.lyuxc.ExternalAccessor.capability;
 
 import com.refinedmods.refinedstorage.api.network.INetwork;
 import com.refinedmods.refinedstorage.api.storage.cache.IStorageCacheListener;

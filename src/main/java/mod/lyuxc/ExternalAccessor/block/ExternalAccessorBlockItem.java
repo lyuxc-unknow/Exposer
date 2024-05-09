@@ -1,6 +1,6 @@
-package cn.lyuxc.ExternalAccessor.block;
+package mod.lyuxc.ExternalAccessor.block;
 
-import cn.lyuxc.ExternalAccessor.block.render.ExternalAccessorBlockItemRenderer;
+import mod.lyuxc.ExternalAccessor.block.render.ExternalAccessorBlockItemRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
